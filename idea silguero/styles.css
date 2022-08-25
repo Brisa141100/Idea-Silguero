@@ -63,7 +63,8 @@
     position: absolute;
     width: 100%;
     top: 190px;
-    text-align: center;
+
+
 }
 
 .letrawhite {
@@ -347,3 +348,22 @@ head {
     .card__description { margin-top: 10px;text-align: center; margin-left: 0px;
     }
     .card__name2 {margin-left: 0;}}
+    .animate__heartBeat {-webkit-animation-iteration-count: infinite;}
+   
+    
+      
+      nav ul li {
+        font-size: 16px;
+      }
+      
+      nav ul li a {
+        display: block; 
+        padding: 20px;
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      nav ul li:hover {
+        background: #00000043;
+      }
+     
