@@ -1,0 +1,349 @@
+* {margin: 0; padding: 0;}
+
+
+@font-face {
+    font-family: "libre baskerbille italic";
+    src: url("./Fonts/LibreBaskerville-Italic.ttf");
+}
+
+@font-face {
+    font-family: "libre basrkerbille bold";
+    src: url("./../Fonts/LibreBaskerville-Bold.ttf");
+}
+
+@font-face {
+    font-family: "libre baskerbille regular";
+    src: url("./../Fonts/LibreBaskerville-Regular.ttf");
+}
+
+.posicionarriba {
+    position: fixed;
+    width:100%;
+    top: 0%;
+
+}
+
+.centrado {
+    text-align: center;
+}
+
+.fondoRosa {
+    background-color: rgba(0, 0, 0, 0.325);
+}
+
+.redondeado {
+    border-radius: 10px;
+}
+
+.interlineadoGrande {
+    line-height: 500%;
+}
+
+.subrayadoArriba {
+    text-decoration: overline;
+}
+
+.subrayadoAbajo {
+    text-decoration: underline;
+}
+
+.Espacioalaizquierda {
+    padding-left: 45%;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 39px;
+    height: 20%;
+
+}
+
+.menu2 {
+    position: absolute;
+    width: 100%;
+    top: 190px;
+    text-align: center;
+}
+
+.letrawhite {
+    color: aliceblue;
+}
+
+.fondonegro {
+    background-color: rgba(0, 0, 0, 0.455);
+}
+
+.ancho {
+    max-width: 500%;
+    max-block-size: 100%;
+}
+
+.letra {
+    font-family: "libre baskerbille italic";
+    color: rgb(250, 250, 250);
+}
+
+.cardd {
+    width: 40%;
+    background-color: rgb(239, 232, 232);
+    height: 700px;
+    display: inline-block;
+   padding-left: 5%;
+   margin-left: 30px;
+   
+
+}
+.card2 {width:50% ; padding-left: 30px ; display: block; }
+.card__image {
+    width: 85%;
+    height: 70%;
+    align-self: center;
+}
+.card__image2 {width: 100%; margin-left: 30px;}
+.card__description { margin-top: 10px;text-align: center; margin-left: 30px;}
+.card__name2 { font-family: "libre baskerbille italic";
+    text-align:center;  margin-top: 5%; margin-left: 30px;}
+
+.card__name {
+    font-family: "libre baskerbille italic";
+    text-align:center;
+    margin-top: 5%;
+    margin-right: 140px;
+
+
+}
+
+.btnn{
+   margin-left: 120px;
+    padding-bottom: 0%;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+}
+
+.btn__section {    
+    padding-bottom: 0%;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 40% ;
+}
+
+.WIN {
+    margin-top: 10%;
+    color: black;
+    padding-bottom: 50px;
+}
+
+ul {
+    list-style: none;
+    font-size: 0px;
+   
+}
+
+li {
+    display: inline-block;
+    width: 25%;
+    position: relative;
+    font-size: 14px;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    margin-left: 125px;
+
+}
+
+ul ul li {
+    display: block;
+}
+
+ul li:hover ul {
+    display: block;
+    padding-left: 0%;
+}
+
+.titulo {
+    font-size: xx-large;
+    margin-top: 0px;
+    padding-bottom: 70px;
+    display: inline;letter-spacing: 5px;
+}
+
+.img_kendall {
+    margin-top: 3%;
+width: 100%;
+    padding-right: 0%;
+}
+ 
+head {
+    margin-top: 0%;
+}
+
+.card2 {
+    margin-top: 30px; margin-left: 20%;
+}
+
+.menupage {margin-top: 170px;}
+
+.form-login {
+    width: 400px;
+    height: 340px;
+    background: #4e4d4d9c;
+    margin: auto;
+    margin-top: 180px;
+    box-shadow: 7px 13px 37px #000;
+    padding: 20px 30px;
+    border-top: 4px solid #d3b6cd;;
+    color: white;
+    display: relative;
+    margin-top: 0%;
+  }
+  
+  .form-login h5 {
+    margin: 0;
+    text-align: center;
+    height: 40px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid;
+    font-size: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    border: 1px solid #d3b6cd;;
+    margin-bottom: 15px;
+    padding: 11px 10px;
+    background: #efefef;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .buttons {
+    width: 100%;
+    height: 40px;
+    background: #d3b6cd;
+    border: none;
+    color: rgb(0, 0, 0);
+    margin-bottom: 16px;
+  }
+  
+  .form-login p{
+    height: 40px;
+    text-align: center;
+    border-bottom: 1px solid;
+  }
+  
+  .form-login a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  
+  @media (min-width: 1200px){
+
+    body {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1 Fr);
+        grid-template-rows: 2 Fr, 1 Fr, 1 Fr, 1 Fr, 1 Fr;
+        grid-template-areas: 
+        "header header"
+        "content content"
+        "content content"
+        "section section"
+        "footer footer"; 
+    }
+        header {
+            display: grid;
+            grid-area:header; 
+            flex-direction: row;
+        }
+        main { display: inline-flex
+            ;
+        grid-area: content;
+    justify-content:center;
+    padding: 0;
+    
+      }
+    
+      footer {display: inline-block;
+    grid-area: footer;
+    justify-content: center;
+    align-items: center;
+   
+        
+    }
+    section {
+        grid-area: section;
+        align-items: center;
+    }}
+    
+    @media (max-width: 320px){
+    
+        body {
+            height: 100vh;
+            display: grid;
+            padding: 0;
+            grid-template-columns: repeat(2, 1 Fr);
+            grid-template-rows: 2 Fr, 1 Fr, 1 Fr, 1 Fr, 1 Fr;
+            grid-template-areas: 
+            "header header"
+            "content content"
+            "content content"
+            "section section"
+            "footer footer"; 
+        }
+            header {
+                display: grid;
+                grid-area:header; 
+                flex-direction: row;
+                width: 100%;
+                padding: 0;
+               
+            }
+            main { display: grid
+                ;
+            grid-area: content;
+        justify-content:center;
+        padding: 0;
+        flex-direction: row;
+        
+          }
+        
+          footer {display: inline-block;
+        grid-area: footer;
+        justify-content: center;
+        align-items: center;
+        margin-right: 25%;
+        
+            
+        }
+        section {
+            grid-area: section;
+            align-items: center;
+        }
+        .img_kendall {width: 450px; align-self: center; margin-top: 30px;}
+       
+     nav {width: 450px; margin-left: 0;}
+      .fondoRosa {width: 450px;}
+      .card {padding-left: 35px;
+  width: 80%;}
+      .card2 {margin-right: 40%;}
+      .btn {margin-left: 70px;}
+      .card__name{ margin-right: 25%;}
+      .menu2 {margin-left: 0;}
+    ul {margin-left: 0%;}
+      .btn__section {    
+        padding-bottom: 0%;
+        width: 200px;
+        height: 50px;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+    .card__image2 {margin:auto}
+    .card__description { margin-top: 10px;text-align: center; margin-left: 0px;
+    }
+    .card__name2 {margin-left: 0;}}

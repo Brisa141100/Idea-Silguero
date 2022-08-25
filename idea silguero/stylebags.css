@@ -1,0 +1,192 @@
+
+
+@font-face {
+    font-family: "libre baskerbille italic";
+    src: url("./Fonts/LibreBaskerville-Italic.ttf");
+}
+
+@font-face {
+    font-family: "libre basrkerbille bold";
+    src: url("./../Fonts/LibreBaskerville-Bold.ttf");
+}
+
+@font-face {
+    font-family: "libre baskerbille regular";
+    src: url("./../Fonts/LibreBaskerville-Regular.ttf");
+}
+
+.posicionarriba {
+    position: fixed;
+    width:100%;
+    top: 0%;
+
+}
+
+.centrado {
+    text-align: center;
+}
+
+.fondoRosa {
+    background-color: rgba(0, 0, 0, 0.325);
+}
+
+.redondeado {
+    border-radius: 10px;
+}
+
+.interlineadoGrande {
+    line-height: 500%;
+}
+
+.subrayadoArriba {
+    text-decoration: overline;
+}
+
+.subrayadoAbajo {
+    text-decoration: underline;
+}
+
+.Espacioalaizquierda {
+    padding-left: 45%;
+}
+
+.menu {
+    position: fixed;
+    width: 100%;
+    top: 39px;
+    height: 11%;
+
+}
+
+.menu2 {
+    position: absolute;
+    width: 100%;
+    top: 190px;
+    text-align: center;
+}
+
+.letrawhite {
+    color: aliceblue;
+}
+
+.fondonegro {
+    background-color: rgba(0, 0, 0, 0.455);
+}
+
+.ancho {
+    max-width: 500%;
+    max-block-size: 100%;
+}
+
+.letra {
+    font-family: "libre baskerbille italic";
+    color: rgb(250, 250, 250);
+}
+
+.card {
+    width: 45%;
+    background-color: rgb(239, 232, 232);
+    height: 700px;
+    display: inline-block;
+
+}
+.card2 {width:50% ; padding-left: 50px ; display: block;}
+.card__image {
+    width: 80%;
+    padding: 10px 20px 10px 55px;
+    height: 70%;
+}
+.card__image2 {width: 100%;;}
+.card__description { margin-top: 10px;text-align: center;}
+
+.card__name {
+    font-family: "libre baskerbille italic";
+    text-align: center;
+    margin-top: 5%;
+}
+
+.btn {
+    margin-left: 35%;
+    padding-bottom: 0%;
+    width: 200px;
+    height: 50px;
+    margin-top: 30px;
+
+}
+
+.WIN {
+    margin-top: 10%;
+    color: black;
+    padding-bottom: 50px;
+}
+.titulo {
+    font-size: xx-large;
+    margin-top: 0px;
+    padding-bottom: 50px;
+    display: inline;letter-spacing: 5px;
+}
+head {
+    margin-top: 0%;
+}
+
+.menupage {margin-top: 170px; width: 100%;}
+
+@media (min-width: 1200px){
+    body {
+        height: 100vh;
+        display: grid;
+        padding: 0;
+        grid-template-columns: repeat(2, 1 Fr);
+        grid-template-rows: 1 Fr, 15 Fr, 8 Fr;
+        grid-template-areas: 
+        "header header"
+        "content content"
+        "section section"; 
+    }
+header{display: grid;
+    grid-area: header ;
+width: 100%; flex-direction: row;}
+.menu2 {width: 100%;display: block; margin-left: 0;} 
+ 
+
+main {grid-area: content; align-items: center; align-content: center;}
+
+    section {grid-area: section;}
+}
+
+    @media (max-width: 320px){
+  
+        body {
+            width: 100%;
+            height: 100vh;
+            display: grid;
+            padding: 0;
+            grid-template-columns: repeat(2, 1 Fr);
+            grid-template-rows: 1 Fr, 15 Fr, 2 Fr, 2 Fr;
+            grid-template-areas: 
+            "header header"
+            "content content"
+            "section section"
+            "section section"; 
+           
+            
+        }
+        header {
+            display: flex;
+            grid-area:header; 
+             width: 100%;
+            padding: 0;}
+        
+            .menu2 {
+                position: fixed;
+                width: 100%;
+                top: 20%;
+                
+            }
+        
+main {grid-area: content; display: inline-block;}
+.card{width: 90%; height: auto;}
+section {grid-area: section;}
+.btn {  width: 300px;
+    height: 100px;}
+}
