@@ -31,11 +31,11 @@
 }
 
 .fondoRosa {
-    background-color: rgba(0, 0, 0, 0.325); 
+    background-color: rgba(0, 0, 0, 0.325);
 }
 
 .redondeado {
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 .interlineadoGrande {
@@ -60,6 +60,7 @@
     top: 25px;
     height: 25%;
 }
+
 .menupage {
     margin-top: 170px;
 }
@@ -68,7 +69,7 @@
     position: absolute;
     width: 100%;
     top: 190px;
-    
+
 }
 
 .letrawhite {
@@ -134,7 +135,7 @@
     font-family: "libre baskerbille italic";
     text-align: center;
     margin-top: 5%;
-  
+
 
 
 }
@@ -164,7 +165,7 @@
 
 ul {
     list-style: none;
-    font-size: 0px; 
+    font-size: 0px;
 
 }
 
@@ -179,18 +180,19 @@ ul ul {
     position: absolute;
     display: none;
     width: 100%;
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 ul ul li {
-    display: block; padding: 10px;
+    display: block;
+    padding: 10px;
 }
 
 ul li:hover ul {
     display: block;
-  text-align: center;
-  padding-left: 0%;
-   
+    text-align: center;
+    padding-left: 0%;
+
 }
 
 .titulo {
@@ -215,7 +217,8 @@ head {
     margin-top: 30px;
     margin-left: 20%;
 }
-.form-login{
+
+.form-login {
     width: 400px;
     height: 340px;
     background: #4e4d4d9c;
@@ -271,30 +274,67 @@ head {
     display: block;
     align-self: center;
 }
-.crsl{ 
- position:relative; 
- margin-top: 22px;
- height: 550px;
+
+.crsl {
+    position: relative;
+    margin-top: 22px;
+    height: 550px;
 }
+
 .letrawhite {
-color:rgb(255, 255, 255); 
+    color: rgb(255, 255, 255);
 }
-.d-block { height: 550px; background-image: linear-gradient(to bottom, black, white);}
 
-.ulbackcolor{background-color:rgba(251, 251, 251, 0.5);}
+.d-block {
+    height: 550px;
+    background-image: linear-gradient(to bottom, black, white);
+}
 
-.letrablack{color: black;}
+.ulbackcolor {
+    background-color: rgba(251, 251, 251, 0.5);
+}
 
-#mdepago{margin-top: 100px;}
-#visa{width: 50px;margin-left: 45%;}
-#mastercard{width:50px}
-#CST{font-size: small; margin-bottom: 0px; margin-top: 50px;margin-left: 42%}
-#padding{padding:20px}
+.letrablack {
+    color: black;
+}
 
-.navbar-toggler {position: absolute;}
-.container-fluid {position: absolute;}
-.navbar {position: absolute;}
-@media (min-width: 1200px){
+#mdepago {
+    margin-top: 100px;
+}
+
+#visa {
+    width: 50px;
+    margin-left: 45%;
+}
+
+#mastercard {
+    width: 50px
+}
+
+#CST {
+    font-size: small;
+    margin-bottom: 0px;
+    margin-top: 50px;
+    margin-left: 42%
+}
+
+#padding {
+    padding: 20px
+}
+
+.navbar-toggler {
+    position: absolute;
+}
+
+.container-fluid {
+    position: absolute;
+}
+
+.navbar {
+    position: absolute;
+}
+
+@media (min-width: 1200px) {
 
     body {
         height: 100%;
@@ -335,9 +375,10 @@ color:rgb(255, 255, 255);
     section {
         grid-area: section;
         align-items: center;
-    }}
+    }
+}
 
-@media (max-width: 320px){
+@media (max-width: 320px) {
 
     body {
         height: 100vh;
@@ -401,16 +442,17 @@ color:rgb(255, 255, 255);
         width: 450px;
     }
 
-    .card {
+    .cardd {
         padding-left: 35px;
-        width: 80%;
+        width: 90%;
+
     }
 
     .card2 {
         margin-right: 40%;
     }
 
-    .btn {
+    .btnn {
         margin-left: 70px;
     }
 
@@ -453,12 +495,14 @@ color:rgb(255, 255, 255);
     animation-iteration-count: infinite;
 }
 
-nav ul {padding-left: 170px; }
+nav ul {
+    padding-left: 170px;
+}
 
 nav ul li {
     font-size: 16px;
     color: white;
- 
+
 }
 
 nav ul li a {
@@ -468,5 +512,17 @@ nav ul li a {
 }
 
 nav ul li:hover {
-    background: rgba(18, 18, 18, 0.538); }
+    background: rgba(18, 18, 18, 0.538);
+}
 
+.offcanvas-body {
+    background-color: rgb(83, 83, 83);
+}
+
+#navbarr {
+    margin-top: 50px;
+}
+
+.colorbtn {
+    background-color: #d3b6cd
+}    
