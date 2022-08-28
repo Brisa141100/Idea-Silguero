@@ -296,3 +296,6 @@ body{background-image: linear-gradient(to bottom, rgb(84, 84, 84), white);}
   #nav-link {font-size:large; text-align: center;font-family: "libre baskerbille italic"; padding-top: 20px;}
   #fondo {background-color: rgb(173, 95, 137);border-color:rgb(173, 95, 137) ;}
   #contentt {margin-left: 150px;margin-top: 100px;}
+  .animate__heartBeat {
+    animation-iteration-count: infinite;
+}
