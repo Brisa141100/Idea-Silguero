@@ -3,10 +3,9 @@
     margin: 0;
 }
 
-
 @font-face {
     font-family: "libre baskerbille italic";
-    src: url("./Fonts/LibreBaskerville-Italic.ttf");
+    src: url("./../Fonts/LibreBaskerville-Italic.ttf");
 }
 
 @font-face {
@@ -155,8 +154,8 @@ head {
     width: 100%;
 }
 
-#inicio{ color: white; margin-left: 47%;}
-
+#volveralI {margin-left: 48%;}
+#VaI {margin-top: 160px;}
 .crslb {
     position: relative;
     margin-top: 200px;
@@ -191,11 +190,12 @@ head {
         height: 100%;
         display: grid;
         grid-template-columns: repeat(2, 1 Fr);
-        grid-template-rows: 1 Fr, 15 Fr, 8 Fr;
+        grid-template-rows: 1 Fr, 15 Fr, 8 Fr,1 Fr;
         grid-template-areas:
             "header header"
             "content content"
             "section section"
+            "footer footer"
             ;
     }
 
@@ -212,7 +212,6 @@ head {
         margin-left: 0;
     }
 
-
     main {
         grid-area: content;
         align-items: center;
@@ -222,7 +221,7 @@ head {
     section {
         grid-area: section;
     }
-
+    footer {grid-area: footer;}
     * {
         padding: 0;
         margin: 0;
@@ -243,7 +242,6 @@ head {
             "content content"
             "section section"
             "section section";
-
 
     }
 
@@ -280,5 +278,19 @@ head {
         height: 100px;
     }
 }
+
+.sctn {margin-left: 100px; margin-top: 100px; margin-bottom: 100px;}
+body{background-image: linear-gradient(to bottom, rgb(84, 84, 84), white);}
+.offcanvas-body {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  #navbarr {
+      margin-top: 50px;
+  }
+  .nav-item{height: 80px;}
+  #nav-link {font-size:large; text-align: center;font-family: "libre baskerbille italic"; padding-top: 20px;}
+  #fondo {background-color: rgb(173, 95, 137);border-color:rgb(173, 95, 137) ;}
+  #contentt {margin-left: 150px;margin-top: 100px;}
 
 

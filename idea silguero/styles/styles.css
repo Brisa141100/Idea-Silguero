@@ -3,20 +3,23 @@
     padding: 0;
 }
 
-
-@font-face {
+@font-face{
     font-family: "libre baskerbille italic";
-    src: url("./Fonts/LibreBaskerville-Italic.ttf");
+    src: url("./../Fonts/LibreBaskerville-Italic.ttf");
 }
 
-@font-face {
+@font-face{
     font-family: "libre basrkerbille bold";
     src: url("./../Fonts/LibreBaskerville-Bold.ttf");
 }
 
-@font-face {
+@font-face{
     font-family: "libre baskerbille regular";
     src: url("./../Fonts/LibreBaskerville-Regular.ttf");
+}
+
+body{
+    background-image: linear-gradient(to bottom, rgb(84, 84, 84), white);
 }
 
 .posicionarriba {
@@ -42,15 +45,15 @@
     line-height: 500%;
 }
 
-.subrayadoArriba {
+.subrayadoArriba{
     text-decoration: overline;
 }
 
-.subrayadoAbajo {
+.subrayadoAbajo{
     text-decoration: underline;
 }
 
-.Espacioalaizquierda {
+.Espacioalaizquierda{
     padding-left: 45%;
 }
 
@@ -96,8 +99,7 @@
     height: 700px;
     display: inline-block;
     padding-left: 5%;
-    margin-left: 30px;
-
+    margin-left: 5px;
 
 }
 
@@ -135,7 +137,6 @@
     font-family: "libre baskerbille italic";
     text-align: center;
     margin-top: 5%;
-
 
 
 }
@@ -222,7 +223,7 @@ head {
     width: 400px;
     height: 340px;
     background: #4e4d4d9c;
-    margin: auto;
+    margin-left: 70%;
     margin-top: 180px;
     box-shadow: 7px 13px 37px #000;
     padding: 20px 30px;
@@ -287,7 +288,6 @@ head {
 
 .d-block {
     height: 550px;
-    background-image: linear-gradient(to bottom, black, white);
 }
 
 .ulbackcolor {
@@ -299,12 +299,12 @@ head {
 }
 
 #mdepago {
-    margin-top: 100px;
+    margin-top: 100px; margin-left: 42%;
 }
 
 #visa {
-    width: 50px;
-    margin-left: 45%;
+    width: 50px; margin-left: 40px;
+
 }
 
 #mastercard {
@@ -315,7 +315,7 @@ head {
     font-size: small;
     margin-bottom: 0px;
     margin-top: 50px;
-    margin-left: 42%
+  
 }
 
 #padding {
@@ -369,7 +369,6 @@ head {
         justify-content: center;
         align-items: center;
 
-
     }
 
     section {
@@ -419,7 +418,6 @@ head {
         align-items: center;
         margin-right: 25%;
 
-
     }
 
     section {
@@ -427,7 +425,7 @@ head {
         align-items: center;
     }
 
-    .img_kendall {
+    .img_kendall{
         width: 450px;
         align-self: center;
         margin-top: 30px;
@@ -439,12 +437,12 @@ head {
     }
 
     .fondoRosa {
-        width: 450px;
+        width: 100vh; 
     }
 
     .cardd {
         padding-left: 35px;
-        width: 90%;
+        width: 100%;
 
     }
 
@@ -516,13 +514,19 @@ nav ul li:hover {
 }
 
 .offcanvas-body {
-    background-color: rgb(83, 83, 83);
+  background-color: rgb(0, 0, 0);
 }
 
 #navbarr {
     margin-top: 50px;
 }
-
-.colorbtn {
-    background-color: #d3b6cd
-}    
+.nav-item{height: 80px;}
+#nav-link {font-size:large; text-align: center;font-family: "libre baskerbille italic"; padding-top: 20px;}
+#fondo{background-color: rgb(173, 95, 137);border-color:rgb(173, 95, 137) ;}
+#contentt{margin-left: 184px;margin-top: 100px;}
+#volveralI{margin-right: 450px;}
+#VaI{margin-top: 50px; margin-bottom: 50px;}
+.carousel-inner {margin-top: 22px;}
+#carouselExampleDark{width: 700px; margin-left: 20%; margin-top: 100px; position: relative;}
+#divcrsl{width: 700px; height: 950px;}
+#imgcrsl{width: 700px; height: 800px;}
