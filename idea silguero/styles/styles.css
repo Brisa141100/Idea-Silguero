@@ -223,7 +223,7 @@ head {
     width: 400px;
     height: 340px;
     background: #4e4d4d9c;
-    margin-left: 70%;
+   margin-left: %;
     margin-top: 180px;
     box-shadow: 7px 13px 37px #000;
     padding: 20px 30px;
@@ -382,6 +382,7 @@ head {
         grid-area: section;
         align-items: center;
     }
+    .menu3 {display: none;}
 }
 
 @media (max-width: 320px){
@@ -436,6 +437,7 @@ head {
     section {
         grid-area: section;
         align-items: center;
+      
     }
 
     .img_kendall {
@@ -447,9 +449,13 @@ head {
     #mdepago {margin-left: 55%;}
 
     .fondoRosa {
-        width: 100%;
+        width: 100% !important; 
     }
-
+    .form-login{
+        width:300px !important;
+     height: 500px !important;
+margin-left: 45px;
+    }
     .cardd {
         padding-left: 35px;
         width: 80%;
@@ -476,6 +482,7 @@ head {
     .card__name {
         margin-right: 25%;
     }
+    
     .navbar-toggler {width: 100px;height: 70px;}
     .navbar-toggler-icon{width: 60px !important;height: 60px !important;}
 body {background-image:none;}
@@ -489,6 +496,7 @@ body {background-image:none;}
     ul {
         margin-left: 0%;
     }
+    #CST {margin-left: 10%;}
 
     .btn__section {
         padding-bottom: 0%;
@@ -507,7 +515,9 @@ body {background-image:none;}
         text-align: center;
         margin-left: 0px;
     }
-
+    #volveralI {
+        margin-left:;
+    }
     .card__name2 {
         margin-left: 0;
     }
@@ -581,7 +591,7 @@ nav ul li:hover {
 }
 
 #volveralI {
-    margin-right: 450px;
+    margin-left: 45%;
 }
 
 #VaI {
@@ -600,7 +610,7 @@ nav ul li:hover {
 }
 
 #volveralI {
-    margin-right: 450px;
+    margin-left: 48%;
 }
 
 #VaI {
