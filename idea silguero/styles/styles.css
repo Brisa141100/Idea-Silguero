@@ -3,22 +3,22 @@
     padding: 0;
 }
 
-@font-face{
+@font-face {
     font-family: "libre baskerbille italic";
     src: url("./../Fonts/LibreBaskerville-Italic.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: "libre basrkerbille bold";
     src: url("./../Fonts/LibreBaskerville-Bold.ttf");
 }
 
-@font-face{
+@font-face {
     font-family: "libre baskerbille regular";
     src: url("./../Fonts/LibreBaskerville-Regular.ttf");
 }
 
-body{
+body {
     background-image: linear-gradient(to bottom, rgb(84, 84, 84), white);
 }
 
@@ -45,15 +45,15 @@ body{
     line-height: 500%;
 }
 
-.subrayadoArriba{
+.subrayadoArriba {
     text-decoration: overline;
 }
 
-.subrayadoAbajo{
+.subrayadoAbajo {
     text-decoration: underline;
 }
 
-.Espacioalaizquierda{
+.Espacioalaizquierda {
     padding-left: 45%;
 }
 
@@ -79,9 +79,6 @@ body{
     color: aliceblue;
 }
 
-.fondonegro {
-    background-color: rgba(0, 0, 0, 0.455);
-}
 
 .ancho {
     max-width: 500%;
@@ -99,7 +96,8 @@ body{
     height: 700px;
     display: inline-block;
     padding-left: 5%;
-    margin-left: 5px;}
+    margin-left: 5px;
+}
 
 .card2 {
     width: 50%;
@@ -298,14 +296,17 @@ head {
 
 #mdepago {
 
-    margin-top: 100px; margin-left:42%;
+    margin-top: 100px;
+    margin-left: 42%;
 
-    margin-top: 100px; margin-left:44%;
+    margin-top: 100px;
+    margin-left: 44%;
 
 }
 
 #visa {
-    width: 50px; margin-left: 40px;
+    width: 50px;
+    margin-left: 40px;
 
 }
 
@@ -317,7 +318,7 @@ head {
     font-size: small;
     margin-bottom: 0px;
     margin-top: 50px;
-  
+
 }
 
 #padding {
@@ -386,7 +387,7 @@ head {
         display: grid;
         padding: 0;
         grid-template-columns: repeat(2, 1 Fr);
-        grid-template-rows: 2 Fr, 1 Fr, 1 Fr, 1 Fr, 1 Fr;
+        grid-template-rows: 4 Fr, 2 Fr, 2 Fr, 6 Fr, 1 Fr;
         grid-template-areas:
             "header header"
             "content content"
@@ -396,20 +397,19 @@ head {
     }
 
     header {
-        display: grid;
+        display:block;
         grid-area: header;
         flex-direction: row;
         width: 100%;
-        padding: 0;
-
-    }
+        }
 
     main {
         display: grid;
         grid-area: content;
-        justify-content: center;
         padding: 0;
         flex-direction: row;
+        align-items: center;
+        
 
     }
 
@@ -427,43 +427,44 @@ head {
         align-items: center;
     }
 
-    .img_kendall{
+    .img_kendall {
         width: 450px;
         align-self: center;
         margin-top: 30px;
     }
 
-    nav {
-        width: 450px;
-        margin-left: 0;
-    }
+    #mdepago {margin-left: 55%;}
 
     .fondoRosa {
-        width: 100vh; 
+        width: 100%;
     }
 
     .cardd {
         padding-left: 35px;
-        width: 100%;
-
+        width: 80%;
+        margin-left: 100px;
+        padding-left:90px;
     }
-
+    #carouselExampleDark {margin-left: 50px !important;}
+    #contentt {margin-left: 40px !important; }
+    .carousel-inner {margin-left: 50px !important;}
     .card2 {
         margin-right: 40%;
     }
 
     .btnn {
-        margin-left: 70px;
+        margin-left: 170px;
     }
 
     .card__name {
         margin-right: 25%;
     }
-
+body {background-image:none;}
     .menu2 {
         margin-left: 0;
+        width: 100% !important;
     }
-
+#navv {width: 420px;}
     ul {
         margin-left: 0%;
     }
@@ -516,25 +517,234 @@ nav ul li:hover {
 }
 
 .offcanvas-body {
-  background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
 }
 
 #navbarr {
     margin-top: 50px;
 }
-.nav-item{height: 80px;}
-#nav-link {font-size:large; text-align: center;font-family: "libre baskerbille italic"; padding-top: 20px;}
-#fondo{background-color: rgb(173, 95, 137);border-color:rgb(173, 95, 137) ;}
-#contentt{margin-left: 184px;margin-top: 100px;}
-#volveralI{margin-right: 450px;}
-#VaI{margin-top: 50px; margin-bottom: 50px;}
 
-#fondo {background-color: rgb(173, 95, 137);border-color:rgb(173, 95, 137) ;}
-#contentt {margin-left: 184px;margin-top: 100px;}
-#volveralI {margin-right: 450px;}
-#VaI {margin-top: 50px; margin-bottom: 50px;}
-.carousel-inner {margin-top: 22px;}
-#carouselExampleDark{width: 700px; margin-left: 20%; margin-top: 100px; position: relative;}
-#divcrsl{width: 700px; height: 950px;}
-#imgcrsl{width: 700px; height: 800px;}
+.nav-item {
+    height: 80px;
+}
 
+#nav-link {
+    font-size: large;
+    text-align: center;
+    font-family: "libre baskerbille italic";
+    padding-top: 20px;
+}
+
+#fondo {
+    background-color: rgb(173, 95, 137);
+    border-color: rgb(173, 95, 137);
+}
+
+#contentt {
+    margin-left: 184px;
+    margin-top: 100px;
+}
+
+#volveralI {
+    margin-right: 450px;
+}
+
+#VaI {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#fondo {
+    background-color: rgb(173, 95, 137);
+    border-color: rgb(173, 95, 137);
+}
+
+#contentt {
+    margin-left: 184px;
+    margin-top: 100px;
+}
+
+#volveralI {
+    margin-right: 450px;
+}
+
+#VaI {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.carousel-inner {
+    margin-top: 22px;
+}
+
+#carouselExampleDark {
+    width: 700px;
+    margin-left: 20%;
+    margin-top: 100px;
+    position: relative;
+}
+
+#divcrsl {
+    width: 700px;
+    height: 950px;
+}
+
+#imgcrsl {
+    width: 600px;
+    height: 800px;
+}
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-family: 'feathericons';
+    src: url('../fonts/feathericons/feathericons.eot?-8is7zf');
+    src: url('../fonts/feathericons/feathericons.eot?#iefix-8is7zf') format('embedded-opentype'),
+        url('../fonts/feathericons/feathericons.woff?-8is7zf') format('woff'),
+        url('../fonts/feathericons/feathericons.ttf?-8is7zf') format('truetype'),
+        url('../fonts/feathericons/feathericons.svg?-8is7zf#feathericons') format('svg');
+}
+
+.grid {
+    position: relative;
+    margin: 0 auto;
+    padding: 1em 0 4em;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+}
+
+.grid figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+
+    max-height: 100%;
+    width: 800px;
+    background: #262627;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid figure figcaption {
+    padding: 2em;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300;
+}
+
+.grid figure h2 span {
+    font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+    margin: 0;
+
+}
+
+.grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+
+figure.effect-lily img {
+    max-width: none;
+    width: -webkit-calc(100% + 50px);
+    width: calc(100% + 50px);
+    opacity: 0.7;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0);
+}
+
+figure.effect-lily figcaption {
+    text-align: left;
+}
+
+figure.effect-lily figcaption>div {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2em;
+    width: 100%;
+    height: 50%;
+}
+
+figure.effect-lily h2,
+figure.effect-lily p {
+    -webkit-transform: translate3d(0, 40px, 0);
+    transform: translate3d(0, 40px, 0);
+}
+
+figure.effect-lily h2 {
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+}
+
+figure.effect-lily p {
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    -webkit-transition: opacity 0.2s, -webkit-transform 0.35s;
+    transition: opacity 0.2s, transform 0.35s;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover p {
+    opacity: 1;
+}
+
+figure.effect-lily:hover img,
+figure.effect-lily:hover h2,
+figure.effect-lily:hover p {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-lily:hover p {
+    -webkit-transition-delay: 0.05s;
+    transition-delay: 0.05s;
+    -webkit-transition-duration: 0.35s;
+    transition-duration: 0.35s;
+}
