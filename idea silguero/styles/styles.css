@@ -163,6 +163,8 @@ body {
 ul {
     list-style: none;
     font-size: 0px;
+   
+   
 
 }
 
@@ -171,6 +173,8 @@ li {
     width: 250px;
     position: relative;
     font-size: 14px;
+    height:50px ;
+    text-align: center;
 }
 
 ul ul {
@@ -380,14 +384,14 @@ head {
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 320px){
 
     body {
         height: 100vh;
         display: grid;
         padding: 0;
         grid-template-columns: repeat(2, 1 Fr);
-        grid-template-rows: 4 Fr, 2 Fr, 2 Fr, 6 Fr, 1 Fr;
+        grid-template-rows:  2 Fr, 2 Fr, 2 Fr, 6 Fr, 1 Fr;
         grid-template-areas:
             "header header"
             "content content"
@@ -397,12 +401,13 @@ head {
     }
 
     header {
-        display:block;
+        display:grid;
         grid-area: header;
         flex-direction: row;
         width: 100%;
         }
-
+        nav {width: 450px; margin-left: 0;}
+        .fondoRosa {width: 450px !important;}
     main {
         display: grid;
         grid-area: content;
@@ -421,7 +426,13 @@ head {
         margin-right: 25%;
 
     }
-
+    .titulo {
+      width: 100%;
+        display: block;
+        font-size: 60px;
+     
+    }
+    
     section {
         grid-area: section;
         align-items: center;
@@ -446,25 +457,27 @@ head {
         padding-left:90px;
     }
     #carouselExampleDark {margin-left: 50px !important;}
-    #contentt {margin-left: 40px !important; }
-    .carousel-inner {margin-left: 50px !important;}
+    #contentt {margin-left: 40px !important;}
+    .carousel-inner{margin-top: 350px!important;}
     .card2 {
         margin-right: 40%;
     }
-
+   
     .btnn {
         margin-left: 170px;
     }
-
+    .navbar { width: 400px !important; }
     .card__name {
         margin-right: 25%;
     }
 body {background-image:none;}
-    .menu2 {
+    .menu {
         margin-left: 0;
         width: 100% !important;
+        height: 22% ;
     }
-#navv {width: 420px;}
+    .menu2 {display: none;}
+
     ul {
         margin-left: 0%;
     }
@@ -490,19 +503,26 @@ body {background-image:none;}
     .card__name2 {
         margin-left: 0;
     }
+    .d-block {width: 80%;}
 }
+
+
+
 
 .animate__heartBeat {
     animation-iteration-count: infinite;
 }
 
 nav ul {
-    padding-left: 170px;
+    padding-left: 110px;
+
+
 }
 
 nav ul li {
     font-size: 16px;
     color: white;
+    padding-top: 10px;
 
 }
 

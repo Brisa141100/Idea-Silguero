@@ -248,55 +248,59 @@ head {
 
     * {
         padding: 0;
-        margin: 0;}
+        margin: 0;
+    }
+    #contentt {
+        margin-left: 150px;
+        margin-top: 100px;
+    }
+    .tmñimg {
+        width: 90%;
+        height: 500px;
+    }
 
-        .tmñimg{
-            width: 90%;
-            height:500px;
-        }
+    .row {
+        width: 90%;
+        height: 70%;
+        margin-left: 5%;
+    }
 
-        .row {
-            width: 90%;
-            height: 70%;
-            margin-left: 5%;
-        }
+    .col {
+        width: 50%;
+        height: 50%;
+    }
 
-        .col {
-            width: 50%;
-            height: 50%;
-        }
+    .card {
+        margin-bottom: 300px;
+        padding: 10px;
+        align-items: center;
+    }
 
-        .card {
-            margin-bottom: 300px;
-            padding: 10px;
-            align-items: center;
-        }
+    ul li:hover {
+        background: rgba(18, 18, 18, 0.538);
+    }
 
-        ul li:hover {
-            background: rgba(18, 18, 18, 0.538);
-        }
+    #nav-item {
+        height: 50px;
+    }
 
-        #nav-item {
-            height: 50px;
-        }
-    
 }
 
 @media (max-width: 320px) {
 
-    
-        body {
-            height: 100%;
-            display: grid;
-            grid-template-columns: repeat(2, 1 Fr);
-            grid-template-rows: 2 Fr, 20 Fr, 1 Fr;
-            grid-template-areas:
-                "header header"
-                "section section"
-                "footer footer"
-            ;
-        }
-    
+
+    body {
+        height: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1 Fr);
+        grid-template-rows: 2 Fr, 20 Fr, 1 Fr;
+        grid-template-areas:
+            "header header"
+            "section section"
+            "footer footer"
+        ;
+    }
+
 
     header {
         display: flex;
@@ -304,21 +308,28 @@ head {
         width: 100%;
         padding: 0;
     }
-section {
+
+    section {
         grid-area: section;
     }
+
     footer {
         grid-area: footer;
         display: grid;
         flex-direction: row;
     }
+
     .menu2 {
         position: fixed;
         width: 100%;
         top: 20%;
 
     }
-    .menu {height: 28%;}
+
+    .menu {
+        height: 28%;
+    }
+
     .card {
         width: 90%;
         height: auto;
@@ -326,20 +337,41 @@ section {
         margin-bottom: 0;
         margin-left: 20px;
     }
-#mnu {margin-left: 35%; margin-top: 10px; margin-bottom: 20px;}
+
+    #mnu {
+        margin-left: 35%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+      
+    }
+
     #visa {
         width: 50px;
         margin-left: 40%;
     }
-    #fondo {width: 100px; height: 35px;}
-  #navbarr{margin-top: 20px !important;}
+
+    #fondo {
+        width: 100px;
+        height: 35px;
+    }
+
+    #navbarr {
+        margin-top: 20px !important;
+    }
+
     .btn {
         width: 300px;
         height: 100px;
     }
-    #CST {margin-left: 23%;}
 
-    .menu2 {margin-top: 60px;}
+    #CST {
+        margin-left: 23%;
+    }
+
+    .menu2 {
+        margin-top: 60px;
+    }
+    #contentt {align-self: center;}
 }
 
 .sctn {
@@ -380,11 +412,10 @@ body {
     border-color: rgb(173, 95, 137);
 }
 
-#contentt {
-    margin-left: 150px;
-    margin-top: 100px;
-}
+
 
 .animate__heartBeat {
     animation-iteration-count: infinite;
 }
+.div {margin-top:250px ;}
+#mnu {text-align:center;padding-top:30px;}
