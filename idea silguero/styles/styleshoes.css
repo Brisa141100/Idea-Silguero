@@ -303,10 +303,11 @@ head {
 
 
     header {
-        display: flex;
+        display: grid;
         grid-area: header;
         width: 100%;
         padding: 0;
+flex-direction: row;
     }
 
     section {
@@ -358,7 +359,7 @@ head {
     #navbarr {
         margin-top: 20px !important;
     }
-
+.btnn {margin-left: 10%;}
     .btn {
         width: 300px;
         height: 100px;
@@ -372,6 +373,8 @@ head {
         margin-top: 60px;
     }
     #contentt {align-self: center;}
+    .div {margin-left: 10%;}
+  
 }
 
 .sctn {

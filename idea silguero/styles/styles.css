@@ -456,7 +456,7 @@ head {
         margin-left: 100px;
         padding-left:90px;
     }
-    #carouselExampleDark {margin-left: 50px !important;}
+
     #contentt {margin-left: 40px !important;}
     .carousel-inner{margin-top: 350px!important;}
     .card2 {
@@ -466,10 +466,18 @@ head {
     .btnn {
         margin-left: 170px;
     }
-    .navbar { width: 400px !important; }
+   
+#carouselExampleDark {
+    width: 700px;
+    margin-left: 20%;
+    margin-top: 100px;
+    position: relative;
+}
     .card__name {
         margin-right: 25%;
     }
+    .navbar-toggler {width: 100px;height: 70px;}
+    .navbar-toggler-icon{width: 60px !important;height: 60px !important;}
 body {background-image:none;}
     .menu {
         margin-left: 0;
@@ -504,9 +512,16 @@ body {background-image:none;}
         margin-left: 0;
     }
     .d-block {width: 80%;}
+    #carouselExampleDark {margin-left: 70px !important;}
 }
 
 
+#carouselExampleDark {
+    width: 700px;
+    margin-left: 20%;
+    margin-top: 100px;
+    position: relative;
+}
 
 
 .animate__heartBeat {
@@ -597,12 +612,6 @@ nav ul li:hover {
     margin-top: 22px;
 }
 
-#carouselExampleDark {
-    width: 700px;
-    margin-left: 20%;
-    margin-top: 100px;
-    position: relative;
-}
 
 #divcrsl {
     width: 700px;
