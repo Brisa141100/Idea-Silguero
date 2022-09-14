@@ -1,0 +1,32 @@
+{
+  "name": "idea-silguero",
+  "version": "1.0.0",
+  "description": "mi proyecto",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "node-sass --include-path scss styles/styles.scss styles/styles.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brisa141100/Idea-Silguero.git"
+  },
+  "keywords": [
+    "Zapatos",
+    "carteras",
+    "accesorios",
+    "moda",
+    "envios",
+    "outfits"
+  ],
+  "author": "Brisa Silguero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brisa141100/Idea-Silguero/issues"
+  },
+  "homepage": "https://github.com/Brisa141100/Idea-Silguero#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.19"
+  }
+}
