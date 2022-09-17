@@ -1,10 +1,10 @@
 {
   "name": "idea-silguero",
   "version": "1.0.0",
-  "description": "mi proyecto",
+  "description": "sitio so trend",
   "main": "index.html",
   "scripts": {
-    "build-css": "node-sass --include-path scss styles/styles.scss styles/styles.css",
+    "build-css": "node-sass --include-path scss idea-silguero/styles/styles.scss idea-silguero/styles/styles.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
@@ -27,6 +27,6 @@
   "homepage": "https://github.com/Brisa141100/Idea-Silguero#readme",
   "devDependencies": {
     "node-sass": "^7.0.3",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.20"
   }
 }
