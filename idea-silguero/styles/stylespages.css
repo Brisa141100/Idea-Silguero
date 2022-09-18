@@ -748,7 +748,7 @@ figure.effect-bubba:hover p {
         height: 10%;
     }
 
-.d-block{width:1200px !important; height: 500px !important; margin: 0;}
+
     .card {
         width: 70vh;
         height: auto;
@@ -810,6 +810,15 @@ figure.effect-bubba:hover p {
 
     .menu3 {
         display: block;
+    }
+    #CST {
+        margin-left: 10% !important;
+    }
+
+    #visa {
+        width: 50px;
+        margin-left: 0px;
+
     }
 }
 /*outfits*/

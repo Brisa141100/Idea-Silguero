@@ -4,9 +4,9 @@
     position: relative;
     margin: 0 auto;
     padding: 1em 0 4em;
-    max-width: 1000px;
+    max-width: 100%;
     list-style: none;
-    text-align: center; }
+   justify-content: center;}
   
   .grid figure {
     position: relative;
@@ -14,7 +14,7 @@
     overflow: hidden;
     margin: 10px 1%;
     max-height: 100%;
-    width: 800px;
+    width: 80%;
     background: #262627;
     text-align: center;
     cursor: pointer; }
@@ -121,6 +121,5 @@
     transition-duration: 0.35s; }
     
     #contentt {
-        margin-left: 184px;
-        margin-top: 100px;
+        justify-items: center;
     }
