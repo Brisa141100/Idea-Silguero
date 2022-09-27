@@ -5,6 +5,8 @@
 @import "./../layout/crsl";
 @import "./../Variables/vars";
 @import "./../layout/world";
+@import "./../layout/aboutus";
+@import "./../layout/outfits";
 
 * {
     margin: 0;
@@ -27,7 +29,8 @@ body {
 }
 
 .fondoRosa {
-    background-color: rgba(0, 0, 0, 0.37); z-index: 2;
+    background-color: rgba(0, 0, 0, 0.37);
+    z-index: 2; align-items: center;
 }
 
 .redondeado {
@@ -41,8 +44,7 @@ body {
 }
 
 .menu2 {
-    @include menu2 (absolute, 100%, 190px)
-}
+    @include menu2 (absolute, 100%, 190px);}
 
 .menu {
     @include menu2 (fixed, 100%, 25px);
@@ -53,18 +55,16 @@ body {
     margin-top: 170px;
 }
 
-.menu2 {
-    position: absolute;
-    width: 100%;
-    top: 190px;
 
-}
 
 .letrawhite {
     color: aliceblue;
 }
 
-
+.letratittle {
+    font-family: "libre baskerbille italic";
+    color: $color-white;
+}
 
 .ancho {
     max-width: 500%;
@@ -75,11 +75,20 @@ body {
     font-family: "libre baskerbille italic";
     color: $color-white;
 }
-
+.pdc { padding: 50px !important;}
 
 .accordion {
     z-index: 1 !important;
 }
+.pdc2 {
+    text-align: center;
+    width: 90%;
+    padding: 10%;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
 
 .btnn {
     margin-left: map-get($map: $btn, $key: margin-left);
@@ -93,6 +102,18 @@ body {
     @extend .btnn;
     margin-top: 30px;
     margin-left: 40%;
+}
+
+.abajo1{
+    background: rgba(0, 0, 0, 0.63);
+    transition: 3s;
+
+}
+.abajo{
+    background: rgba(0, 0, 0, 0.712);
+    transition: 3s;
+    font-size: 40px !important;
+   
 }
 
 .WIN {
@@ -115,7 +136,7 @@ ul {
 
         li {
             display: block;
-            padding: 10px;
+           
         }
     }
 
@@ -128,8 +149,8 @@ li {
     font-size: 14px;
     height: 50px;
     text-align: center;
+   
 }
-
 
 
 ul li:hover ul {
@@ -146,7 +167,7 @@ ul li:hover ul {
     display: inline;
     letter-spacing: $tittle-spacing;
     text-decoration: none;
-    z-index: 2;
+    z-index: 3; 
 }
 
 .img_kendall {
@@ -197,10 +218,6 @@ head {
 }
 
 
-#padding {
-    padding: 20px
-}
-
 .navbar-toggler {
     position: fixed;
 }
@@ -218,6 +235,9 @@ head {
     margin-top: 50px;
 }
 
+nav a {
+  margin-top: 10px;
+}
 
 
 
@@ -271,11 +291,12 @@ head {
     .menu3 {
         display: none;
     }
+
     #gridimg {
         width: 900px !important;
         height: 500px;
     }
-    
+
 }
 
 @media (max-width: 500px) {
@@ -290,7 +311,7 @@ head {
         display: grid;
         padding: 0;
         grid-template-columns: repeat(2, 1 Fr);
-        grid-template-rows: 2 Fr, 2 Fr, 2 Fr, 6 Fr, 1 Fr;
+        grid-template-rows: 2 Fr, 4 Fr, 4 Fr, 6 Fr, 1 Fr;
         grid-template-areas:
             "header header"
             "content content"
@@ -339,7 +360,7 @@ head {
         grid-area: footer;
         justify-content: center;
         align-items: center;
-        
+
 
     }
 
@@ -353,32 +374,82 @@ head {
     .img_kendall {
         margin-top: 30px;
     }
+
     #gridimg {
         width: 100% !important;
         height: 50%;
     }
-.grid {width: 20% !important; height: 50%;}
-.grid figure {width: 20%; height: 50%;}
-.iframe {width: 90%; height: 40vh; margin: 5%;}
+
+    
+
+    .gridc figure {
+        width: 80%;
+        height: 80%;
+    margin: 10%;
+    }
+
+    .iframe {
+        width: 90%;
+        height: 40vh;
+        margin: 5%;
+       
+        
+    }
+
     .formc {
         width: 100% !important;
         height: 50%;
-        padding-left: 0% ;
+        padding: 0%;
         position: absolute;
         background-color: rgb(255, 255, 255);
         margin-top: 20px;
-        justify-content: center;
+        margin-left: 0;
+       
+    }
+    .image img{
+        width: 100%;
+        height: 100%;
+        animation: 0.4s;
     }
 
-    #mdepago {
-        margin-left: 35%;
+    .letratittle {
+        font-family: "libre baskerbille italic";
+        color: black;
     }
+    .wrap{
+        width:100%;
+        
+        padding: 0px 0;
+        
+    } .image{
+        flex: 50%;
+        overflow: hidden;
+     
+    }
+    .image:hover img{
+        width: 300px; height: 700px; position: absolute;
+    }
+    .container{
+        width: 100%;
+        max-width: 450px;
+        margin: auto;
+        padding: 0 0px;
+    }
+ 
+    .grid{max-width: 500px;}
 
+    .grid figure {max-width: 500px; max-height: 400px;}
+
+    .grid1 figure{max-width: 500px; max-height: 600px !important;}
+
+
+    .tittlenoticecard {margin-top: 0%;}
     .fondoRosa {
         width: 100% !important;
         height: 4%;
     }
-
+   
+    #gridimg1{ width: 100%; height: 300px; }
 
     .cardd {
         justify-content: center;
@@ -390,7 +461,12 @@ head {
         margin-left: 15%;
 
     }
-.btnn {width: 50%; height: 10%;}
+
+    .btnn {
+        width: 50%;
+        height: 10%;
+    }
+
     #carouselExampleDark {
         margin: 0 !important;
     }
@@ -402,7 +478,7 @@ head {
     #contentt {
         margin: 0 !important;
         width: 100% !important;
-       
+
     }
 
     #CST {
@@ -413,19 +489,13 @@ head {
     }
 
     #motivo {
-        width: 70vh;
-        height: 30px;
+        width: 100%;
+        height: 35px;
     }
 
-    #mdepago2 {
-
-        margin-top: 100px;
-
-    }
- 
     #visa2 {
         width: 50px;
-        margin-left: 50px;
+       
     }
 
     #CST2 {
@@ -434,19 +504,21 @@ head {
         margin-top: 50px;
         margin-left: 50vh
     }
-.titulo {height: 30%;}
+
+    .titulo {
+        height: 30%;
+    }
+#mdepago{margin-left: 17%; margin-right: 17%;}
     .formc {
         width: 100%;
-        height: 800px;
-        padding-left: 30%;
-        position: absolute;
+     padding: 10%;
         background-color: rgb(255, 255, 255);
-        margin-top: 100px;
+        margin-top: 10%; z-index: 1; text-align: center;
     }
 
     #input2 {
-        width: 20vh;
-        height: 40px;
+        width: 20%;
+        height: 30px;
         margin-bottom: 15px;
         margin-left: 20px;
         padding: 10px;
@@ -454,7 +526,7 @@ head {
     }
 
     #email {
-        width: 30%;
+        width: 100%;
         height: 40px;
         margin-bottom: 15px;
         margin-left: 20px;
@@ -469,8 +541,10 @@ head {
 
 
     .accordion-button {
-       
+
         font-size: x-large;
+        width: 100%;
+        padding-left: 20%;
     }
 
 
@@ -482,10 +556,10 @@ head {
     table {
         border: solid 1px black;
         margin-left: 22%;
-        width: 70%;
+        width: 85%;
         height: 350px;
-        margin-top: 200px;
-        margin-bottom: 200px;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
     tbody {
@@ -505,13 +579,13 @@ head {
         padding: 20px;
     }
 
-    .pdc {
+    .pdc2 {
         text-align: center;
         width: 90%;
-        padding: 10%;
-        margin-left: 0;
-        margin-top: 200px;
-        margin-bottom: 100px;
+        padding: 5%;
+        margin-left: 5%;
+        margin-top: 10%;
+        margin-bottom: 10%;
     }
 
     .grid {
@@ -522,9 +596,14 @@ head {
     .card2 {
         margin-right: 40%;
     }
-  #imgcrsl {height: 400px;}
+
+    #imgcrsl {
+        height: 400px;
+    }
+
+.btn-form {margin: 40%;}
     .btnn {
-        margin: auto;
+      margin: auto;
     }
 
     #carouselExampleDark {
@@ -533,7 +612,7 @@ head {
         margin-top: 100px;
         align-self: center;
     }
-
+legend {margin-left: 0%;}
     .card__name {
         margin-right: 25%;
     }
@@ -542,6 +621,7 @@ head {
         width: 45px;
         height: 45px;
         margin: 0 !important;
+        padding: 0;
     }
 
     .offcanvas-body {
@@ -550,7 +630,7 @@ head {
     }
 
     .navbar-toggler-icon {
-        width: 30px !important;
+        width: 35px !important;
         height: 30px !important;
     }
 
@@ -571,7 +651,9 @@ head {
         height: 20vh;
     }
 
-.d-block {height: 400px;}
+    .d-block {
+        height: 400px;
+    }
 
     .accordion-body {
         width: 100%;
@@ -587,30 +669,25 @@ head {
     }
 
     #CST {
-        margin-left: 20%;
+        margin-left: 10% !important;
     }
-
+    .margin{
+        margin-top: 20%
+    }
     #visa {
         width: 50px;
         margin-left: 0px;
-
-    }
-
-    #CST2 {
-        margin-left: 15%;
     }
 
     #visa2 {
         width: 50px;
-        margin-left: 0px;
+    display: inline-block;
+    
 
-    }
+    } 
+    .marginaccordion {margin-top: 80% !important;}
 
-    #mdepago2 {
-        margin-left: 10%;
-    }
-
-    .btn__section {
+  .btn__section {
         padding-bottom: 0%;
         width: 10vh;
         height: 50px;
@@ -632,10 +709,12 @@ head {
         margin-left: 0;
     }
 
+.aboutus {margin-top: 80%; padding-top: 60px; line-height: 50px; height: 100%;}
+.imgst {margin-top: 70%; margin-left: 44%; width: 60px; height: 60px;}
 
 }
 
-a:hover {
+a:hover { 
     color: white;
 }
 
@@ -650,12 +729,13 @@ nav ul {
     li {
         font-size: 16px;
         color: white;
-        padding-top: 10px;
+    
 
         a {
             display: inline;
             color: #fff;
             text-decoration: none;
+            margin-top: 10px;
         }
     }
 }

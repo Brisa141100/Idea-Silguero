@@ -77,16 +77,24 @@ figure.effect-bubba:hover p {
     height: 550px;
 
 }
-
 .grid {
     position: relative;
-    margin: 0 auto;
+  margin: 0;
     padding: 40px;
     max-width: 1000px;
     list-style: none;
     text-align: center;
+    display: inline;
 }
-
+.grid1 {
+    position: relative;
+  margin: 0;
+    padding: 40px;
+    max-width: 1000px;
+    list-style: none;
+    text-align: center;
+    display: inline;
+}
 .grid figure {
     position: relative;
     float: left;
@@ -142,7 +150,7 @@ figure.effect-bubba:hover p {
 
 .grid figure h2 {
     word-spacing: -0.15em;
-    font-weight: 300;
+    font-weight: 300; 
 }
 
 .grid figure h2 span {
@@ -151,10 +159,85 @@ figure.effect-bubba:hover p {
 
 .grid figure h2,
 .grid figure p {
-    margin: 0;
+    margin: 0%;
 }
 
 .grid figure p {
     letter-spacing: 1px;
     font-size: 68.5%;
 }
+.grid1 figure {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    margin: 10px 1%;
+    min-width: 320px;
+    max-width: 1000px;
+    max-height: 1000px;
+    background: #010101;
+    text-align: center;
+    cursor: pointer;
+}
+
+.grid1 figure img {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0.8;
+}
+
+.grid1 figure figcaption {
+    padding: 2em;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.25em;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.grid1 figure figcaption::before,
+.grid1 figure figcaption::after {
+    pointer-events: none;
+}
+
+.grid1 figure figcaption,
+.grid1 figure figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.grid1 figure figcaption>a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+.grid1 figure h2 {
+    word-spacing: -0.15em;
+    font-weight: 300; 
+}
+
+.grid1 figure h2 span {
+    font-weight: 800;
+}
+
+.grid1 figure h2,
+.grid1 figure p {
+    margin: 0%;
+}
+
+.grid1 figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
+}
+
+#gridimg1 {width: 600px;}
+.tittlenoticecard {margin-top: 70%;}
+.imgnotice1 {width: 40%; height: 60%; display: inline-block; margin-top: 0;}
+.tittlenotice {justify-content: end; width: 50%; display: inline-block; margin-top: 60%; font-family:Georgia, 'Times New Roman', Times, serif; text-align: center; padding: 2%;}

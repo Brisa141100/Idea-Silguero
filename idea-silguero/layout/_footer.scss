@@ -12,7 +12,11 @@ justify-content: center;
     margin-left: 370px;
     z-index: 3 !important;
 }
-
+#visa2 {
+    width: 50px;
+    margin-left: 370px;
+    z-index: 3 !important;
+}
 #mastercard {
     width: 50px;
 }
@@ -33,8 +37,8 @@ justify-content: center;
 
 #visa2 {
     width: 50px;
-    margin-left: 50px;
-    z-index: 2;
+    margin-left: 0px;
+    z-index: 3 !important;
 }
 
 #CST2 {
@@ -46,12 +50,12 @@ justify-content: center;
 
 .formc {
     width: 100%;
-    height: auto;
-    padding-left: 30%;
-    position: absolute;
+    padding-left: 35%;
+    position: relative;
     background-color: rgb(255, 255, 255);
     margin-top: 100px;
     z-index: 1;
+  
 }
 
 #input2 {
@@ -74,6 +78,7 @@ justify-content: center;
 legend {
     margin-bottom: 60px;
     margin-top: 20px;
+    margin-left: 50%;
 }
 
 

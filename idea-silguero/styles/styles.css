@@ -1,12 +1,13 @@
-.grid {
+@charset "UTF-8";
+.gridc {
   position: relative;
-  margin: 0 auto;
+  margin: 0;
   padding: 1em 0 4em;
   max-width: 100%;
   list-style: none;
   justify-content: center; }
 
-.grid figure {
+.gridc figure {
   position: relative;
   float: left;
   overflow: hidden;
@@ -17,14 +18,14 @@
   text-align: center;
   cursor: pointer; }
 
-.grid figure img {
+.gridc figure img {
   position: relative;
   display: block;
   min-height: 100%;
   max-width: 100%;
   opacity: 0.8; }
 
-.grid figure figcaption {
+.gridc figure figcaption {
   padding: 2em;
   color: white;
   text-transform: uppercase;
@@ -32,37 +33,37 @@
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden; }
 
-.grid figure figcaption::before,
-.grid figure figcaption::after {
+.gridc figure figcaption::before,
+.gridc figure figcaption::after {
   pointer-events: none; }
 
-.grid figure figcaption,
-.grid figure figcaption > a {
+.gridc figure figcaption,
+.gridc figure figcaption > a {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%; }
 
-.grid figure figcaption > a {
+.gridc figure figcaption > a {
   z-index: 1000;
   text-indent: 200%;
   white-space: nowrap;
   font-size: 0;
   opacity: 0; }
 
-.grid figure h2 {
+.gridc figure h2 {
   word-spacing: -0.15em;
   font-weight: 300; }
 
-.grid figure h2 span {
+.gridc figure h2 span {
   font-weight: 800; }
 
-.grid figure h2,
-.grid figure p {
+.gridc figure h2,
+.gridc figure p {
   margin: 0; }
 
-.grid figure p {
+.gridc figure p {
   letter-spacing: 1px;
   font-size: 68.5%; }
 
@@ -152,6 +153,11 @@ figure.effect-lily:hover p {
   margin-left: 370px;
   z-index: 3 !important; }
 
+#visa2 {
+  width: 50px;
+  margin-left: 370px;
+  z-index: 3 !important; }
+
 #mastercard {
   width: 50px; }
 
@@ -168,8 +174,8 @@ figure.effect-lily:hover p {
 
 #visa2 {
   width: 50px;
-  margin-left: 50px;
-  z-index: 2; }
+  margin-left: 0px;
+  z-index: 3 !important; }
 
 #CST2 {
   font-size: small;
@@ -179,9 +185,8 @@ figure.effect-lily:hover p {
 
 .formc {
   width: 100%;
-  height: auto;
-  padding-left: 30%;
-  position: absolute;
+  padding-left: 35%;
+  position: relative;
   background-color: white;
   margin-top: 100px;
   z-index: 1; }
@@ -203,7 +208,8 @@ figure.effect-lily:hover p {
 
 legend {
   margin-bottom: 60px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin-left: 50%; }
 
 .accordion-button {
   padding-left: 42%;
@@ -263,6 +269,13 @@ td {
   margin-top: 200px;
   margin-bottom: 100px; }
 
+.card {
+  width: 75% !important;
+  height: auto;
+  display: block;
+  margin: auto;
+  text-align: center; }
+
 .cardd {
   width: 47%;
   background-color: #efe8e8;
@@ -302,6 +315,17 @@ td {
 .card2 {
   margin-top: 30px;
   margin-left: 20%; }
+
+.mnu {
+  text-align: center;
+  padding-top: 30px; }
+
+.tmñimg {
+  width: 90%;
+  height: 75vh; }
+
+.card-body {
+  justify-content: center !important; }
 
 #carouselExampleDark {
   width: 700px;
@@ -392,11 +416,21 @@ figure.effect-bubba:hover p {
 
 .grid {
   position: relative;
-  margin: 0 auto;
+  margin: 0;
   padding: 40px;
   max-width: 1000px;
   list-style: none;
-  text-align: center; }
+  text-align: center;
+  display: inline; }
+
+.grid1 {
+  position: relative;
+  margin: 0;
+  padding: 40px;
+  max-width: 1000px;
+  list-style: none;
+  text-align: center;
+  display: inline; }
 
 .grid figure {
   position: relative;
@@ -453,11 +487,169 @@ figure.effect-bubba:hover p {
 
 .grid figure h2,
 .grid figure p {
-  margin: 0; }
+  margin: 0%; }
 
 .grid figure p {
   letter-spacing: 1px;
   font-size: 68.5%; }
+
+.grid1 figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin: 10px 1%;
+  min-width: 320px;
+  max-width: 1000px;
+  max-height: 1000px;
+  background: #010101;
+  text-align: center;
+  cursor: pointer; }
+
+.grid1 figure img {
+  position: relative;
+  display: block;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0.8; }
+
+.grid1 figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden; }
+
+.grid1 figure figcaption::before,
+.grid1 figure figcaption::after {
+  pointer-events: none; }
+
+.grid1 figure figcaption,
+.grid1 figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.grid1 figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0; }
+
+.grid1 figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300; }
+
+.grid1 figure h2 span {
+  font-weight: 800; }
+
+.grid1 figure h2,
+.grid1 figure p {
+  margin: 0%; }
+
+.grid1 figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%; }
+
+#gridimg1 {
+  width: 600px; }
+
+.tittlenoticecard {
+  margin-top: 70%; }
+
+.imgnotice1 {
+  width: 40%;
+  height: 60%;
+  display: inline-block;
+  margin-top: 0; }
+
+.tittlenotice {
+  justify-content: end;
+  width: 50%;
+  display: inline-block;
+  margin-top: 60%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  padding: 2%; }
+
+.tittlepage {
+  margin-top: 150px; }
+
+.subtittlepage {
+  margin-top: 80px; }
+
+.aboutus {
+  margin-top: 350px;
+  background-color: white;
+  width: 100%;
+  margin-left: 0;
+  position: relative;
+  height: 900px;
+  margin-bottom: 600px;
+  padding-top: 200px;
+  padding-right: 100px;
+  padding-left: 100px;
+  line-height: 80px;
+  font-size: x-large; }
+
+.imgaboutus {
+  width: 100%;
+  height: 70%;
+  position: fixed; }
+
+.imgst {
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 47%;
+  width: 80px;
+  height: 80px;
+  z-index: 2; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+.wrap {
+  width: 100%;
+  padding: 50px 0; }
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px; }
+
+.container h1 {
+  text-align: center; }
+
+.container .line {
+  width: 180px;
+  height: 4px;
+  background-color: #333;
+  margin: 50px auto; }
+
+.images {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center; }
+
+.image {
+  flex: 25%;
+  overflow: hidden; }
+
+.image img {
+  width: 100%;
+  height: 100%;
+  animation: 0.4s; }
+
+.image:hover img {
+  width: 400px;
+  height: 700px;
+  position: absolute; }
 
 * {
   margin: 0;
@@ -476,7 +668,8 @@ body {
 
 .fondoRosa {
   background-color: rgba(0, 0, 0, 0.37);
-  z-index: 2; }
+  z-index: 2;
+  align-items: center; }
 
 .redondeado {
   border-radius: 10px; }
@@ -495,13 +688,12 @@ body {
 .menupage {
   margin-top: 170px; }
 
-.menu2 {
-  position: absolute;
-  width: 100%;
-  top: 190px; }
-
 .letrawhite {
   color: aliceblue; }
+
+.letratittle {
+  font-family: "libre baskerbille italic";
+  color: #fafafa; }
 
 .ancho {
   max-width: 500%;
@@ -511,8 +703,19 @@ body {
   font-family: "libre baskerbille italic";
   color: #fafafa; }
 
+.pdc {
+  padding: 50px !important; }
+
 .accordion {
   z-index: 1 !important; }
+
+.pdc2 {
+  text-align: center;
+  width: 90%;
+  padding: 10%;
+  margin-left: 5%;
+  margin-top: 10%;
+  margin-bottom: 10%; }
 
 .btnn, .btn__section {
   margin-left: 25%;
@@ -524,6 +727,15 @@ body {
 .btn__section {
   margin-top: 30px;
   margin-left: 40%; }
+
+.abajo1 {
+  background: rgba(0, 0, 0, 0.63);
+  transition: 3s; }
+
+.abajo {
+  background: rgba(0, 0, 0, 0.712);
+  transition: 3s;
+  font-size: 40px !important; }
 
 .WIN {
   margin-top: 10%;
@@ -540,8 +752,7 @@ ul {
     width: 100%;
     margin-top: 20px; }
     ul ul li {
-      display: block;
-      padding: 10px; }
+      display: block; }
 
 li {
   display: inline-block;
@@ -557,13 +768,13 @@ ul li:hover ul {
   padding-left: 0%; }
 
 .titulo {
-  font-size: xx-large;
+  font-size: 50px;
   margin-top: 0px;
   padding-bottom: 70px;
   display: inline;
   letter-spacing: 5px;
   text-decoration: none;
-  z-index: 2; }
+  z-index: 3; }
 
 .img_kendall {
   margin-top: 3%;
@@ -599,9 +810,6 @@ head {
 .letrablack {
   color: black; }
 
-#padding {
-  padding: 20px; }
-
 .navbar-toggler {
   position: fixed; }
 
@@ -613,6 +821,9 @@ head {
   background-color: #ad5f89;
   border-color: #ad5f89;
   margin-top: 50px; }
+
+nav a {
+  margin-top: 10px; }
 
 @media (min-width: 1200px) {
   body {
@@ -652,7 +863,7 @@ head {
     display: grid;
     padding: 0;
     grid-template-columns: repeat(2, 1 Fr);
-    grid-template-rows: 2 Fr, 2 Fr, 2 Fr, 6 Fr, 1 Fr;
+    grid-template-rows: 2 Fr, 4 Fr, 4 Fr, 6 Fr, 1 Fr;
     grid-template-areas: "header header" "content content" "content content" "section section" "footer footer"; }
   header {
     display: grid;
@@ -686,12 +897,10 @@ head {
   #gridimg {
     width: 100% !important;
     height: 50%; }
-  .grid {
-    width: 20% !important;
-    height: 50%; }
-  .grid figure {
-    width: 20%;
-    height: 50%; }
+  .gridc figure {
+    width: 80%;
+    height: 80%;
+    margin: 10%; }
   .iframe {
     width: 90%;
     height: 40vh;
@@ -699,16 +908,49 @@ head {
   .formc {
     width: 100% !important;
     height: 50%;
-    padding-left: 0%;
+    padding: 0%;
     position: absolute;
     background-color: white;
     margin-top: 20px;
-    justify-content: center; }
-  #mdepago {
-    margin-left: 35%; }
+    margin-left: 0; }
+  .image img {
+    width: 100%;
+    height: 100%;
+    animation: 0.4s; }
+  .letratittle {
+    font-family: "libre baskerbille italic";
+    color: black; }
+  .wrap {
+    width: 100%;
+    padding: 0px 0; }
+  .image {
+    flex: 50%;
+    overflow: hidden; }
+  .image:hover img {
+    width: 300px;
+    height: 700px;
+    position: absolute; }
+  .container {
+    width: 100%;
+    max-width: 450px;
+    margin: auto;
+    padding: 0 0px; }
+  .grid {
+    max-width: 500px; }
+  .grid figure {
+    max-width: 500px;
+    max-height: 400px; }
+  .grid1 figure {
+    max-width: 500px;
+    max-height: 600px !important; }
+  .tittlenoticecard {
+    margin-top: 0%; }
   .fondoRosa {
     width: 100% !important;
     height: 4%; }
+  #gridimg1 {
+    width: 100%;
+    height: 300px; }
   .cardd {
     justify-content: center;
     width: 70%;
@@ -733,13 +975,10 @@ head {
     margin-top: 50px;
     margin-left: 0 !important; }
   #motivo {
-    width: 70vh;
-    height: 30px; }
-  #mdepago2 {
-    margin-top: 100px; }
+    width: 100%;
+    height: 35px; }
   #visa2 {
-    width: 50px;
-    margin-left: 50px; }
+    width: 50px; }
   #CST2 {
     font-size: small;
     margin-bottom: 0px;
@@ -747,22 +986,25 @@ head {
     margin-left: 50vh; }
   .titulo {
     height: 30%; }
+  #mdepago {
+    margin-left: 17%;
+    margin-right: 17%; }
   .formc {
     width: 100%;
-    height: 800px;
-    padding-left: 30%;
-    position: absolute;
+    padding: 10%;
     background-color: white;
-    margin-top: 100px; }
+    margin-top: 10%;
+    z-index: 1;
+    text-align: center; }
   #input2 {
-    width: 20vh;
-    height: 40px;
+    width: 20%;
+    height: 30px;
     margin-bottom: 15px;
     margin-left: 20px;
     padding: 10px;
     display: inline-block; }
   #email {
-    width: 30%;
+    width: 100%;
     height: 40px;
     margin-bottom: 15px;
     margin-left: 20px;
@@ -771,16 +1013,18 @@ head {
     margin-bottom: 60px;
     margin-top: 20px; }
   .accordion-button {
-    font-size: x-large; }
+    font-size: x-large;
+    width: 100%;
+    padding-left: 20%; }
   .accordion {
     margin-top: 100px; }
   table {
     border: solid 1px black;
     margin-left: 22%;
-    width: 70%;
+    width: 85%;
     height: 350px;
-    margin-top: 200px;
-    margin-bottom: 200px; }
+    margin-top: 10%;
+    margin-bottom: 10%; }
   tbody {
     text-align: start; }
   th {
@@ -790,13 +1034,13 @@ head {
   td {
     border: solid 1px black;
     padding: 20px; }
-  .pdc {
+  .pdc2 {
     text-align: center;
     width: 90%;
-    padding: 10%;
-    margin-left: 0;
-    margin-top: 200px;
-    margin-bottom: 100px; }
+    padding: 5%;
+    margin-left: 5%;
+    margin-top: 10%;
+    margin-bottom: 10%; }
   .grid {
     margin: 0 !important;
     max-width: 100% !important; }
@@ -804,6 +1048,8 @@ head {
     margin-right: 40%; }
   #imgcrsl {
     height: 400px; }
+  .btn-form {
+    margin: 40%; }
   .btnn, .btn__section {
     margin: auto; }
   #carouselExampleDark {
@@ -811,16 +1057,19 @@ head {
     margin-left: 70px !important;
     margin-top: 100px;
     align-self: center; }
+  legend {
+    margin-left: 0%; }
   .card__name {
     margin-right: 25%; }
   .navbar-toggler {
     width: 45px;
     height: 45px;
-    margin: 0 !important; }
+    margin: 0 !important;
+    padding: 0; }
   .offcanvas-body {
     width: 100% !important; }
   .navbar-toggler-icon {
-    width: 30px !important;
+    width: 35px !important;
     height: 30px !important; }
   body {
     background-image: none; }
@@ -843,17 +1092,17 @@ head {
   ul {
     margin-left: 0%; }
   #CST {
-    margin-left: 20%; }
+    margin-left: 10% !important; }
+  .margin {
+    margin-top: 20%; }
   #visa {
     width: 50px;
     margin-left: 0px; }
-  #CST2 {
-    margin-left: 15%; }
   #visa2 {
     width: 50px;
-    margin-left: 0px; }
-  #mdepago2 {
-    margin-left: 10%; }
+    display: inline-block; }
+  .marginaccordion {
+    margin-top: 80% !important; }
   .btn__section {
     padding-bottom: 0%;
     width: 10vh;
@@ -867,7 +1116,17 @@ head {
     text-align: center;
     margin-left: 0px; }
   .card__name2 {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .aboutus {
+    margin-top: 80%;
+    padding-top: 60px;
+    line-height: 50px;
+    height: 100%; }
+  .imgst {
+    margin-top: 70%;
+    margin-left: 44%;
+    width: 60px;
+    height: 60px; } }
 
 a:hover {
   color: white; }
@@ -879,12 +1138,12 @@ nav ul {
   padding-left: 160px; }
   nav ul li {
     font-size: 16px;
-    color: white;
-    padding-top: 10px; }
+    color: white; }
     nav ul li a {
       display: inline;
       color: #fff;
-      text-decoration: none; }
+      text-decoration: none;
+      margin-top: 10px; }
 
 nav ul li:hover {
   background: rgba(18, 18, 18, 0.538); }
